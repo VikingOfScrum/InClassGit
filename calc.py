@@ -10,3 +10,4 @@ def calc(a, b):
     mylist = [sumOf, sub, multiply, divide]
     sumMyList = sum(mylist)
 
+calc(7, 4)
