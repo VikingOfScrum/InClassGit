@@ -7,5 +7,5 @@ def calc(a, b):
     print(multiply)
     divide = a/b
     print(divide)
-    
+    mylist = [sum, sub, multiply, divide]
 
