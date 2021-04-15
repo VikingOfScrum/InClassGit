@@ -1,11 +1,12 @@
 def calc(a, b):
-    sum = a + b
-    print(sum)
+    sumOf = a + b
+    print(sumOf)
     sub = a - b
     print(sub)
     multiply = a * b
     print(multiply)
     divide = a/b
     print(divide)
-    mylist = [sum, sub, multiply, divide]
+    mylist = [sumOf, sub, multiply, divide]
+    sumMyList = sum(mylist)
 
