@@ -9,5 +9,6 @@ def calc(a, b):
     print(divide)
     mylist = [sumOf, sub, multiply, divide]
     sumMyList = sum(mylist)
+    print(sumMyList)
 
 calc(7, 4)
