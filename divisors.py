@@ -1,3 +1,5 @@
 def divisors(a):
-    int count = 1
+    count = 1
     while count <- a:
+        if(a % count == 0) :
+            print(count),
