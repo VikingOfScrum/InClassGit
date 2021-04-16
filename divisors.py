@@ -1,5 +1,8 @@
 def divisors(a):
     count = 1
-    while count <- a:
+    while count <= a:
         if(a % count == 0) :
-            print(count),
+            print(count)
+        count += 1
+
+divisors(100)
