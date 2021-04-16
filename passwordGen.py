@@ -8,17 +8,18 @@ def createPassword(length):
     upperCaseChars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
     masterList = digitsAndSymbols + lowerCaseChars + upperCaseChars
+
     
-    randDigitSymbol = random.choice(digitsAndSymbols)
-    randLowerChar = random.choice(lowerCaseChars)
-    randUpperChar = random.choice(upperCaseChars)
-    
+
     createdPassword = ""
-    tempPassword = randDigitSymbol + randLowerChar + randUpperChar
-    
-    for i in range(length - 3):
+    tempPassword = random.choice(digitsAndSymbols) + random.choice(lowerCaseChars) + random.choice(upperCaseChars)
+
+    for _ in range(length - 3):
         tempPassword = tempPassword + random.choice(masterList)
         passwordList = array.array('u', tempPassword)
         random.shuffle(passwordList)
-        
+
+    for _ in tempPassword:
+        createdPassword = createdPassword + _
+    print(createdPassword)
 createPassword(12)
