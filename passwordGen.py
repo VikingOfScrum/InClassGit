@@ -15,4 +15,10 @@ def createPassword(length):
     
     createdPassword = ""
     tempPassword = randDigitSymbol + randLowerChar + randUpperChar
+    
+    for i in range(length - 3):
+        tempPassword = tempPassword + random.choice(masterList)
+        passwordList = array.array('u', tempPassword)
+        random.shuffle(passwordList)
+        
 createPassword(12)
