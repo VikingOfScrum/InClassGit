@@ -1,2 +1,3 @@
 def divisors(a):
-    pass
+    int count = 1
+    while count <- a:
